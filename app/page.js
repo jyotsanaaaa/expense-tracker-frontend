@@ -1,4 +1,5 @@
 "use client";
+import Navbar from "./components/Navbar";
 
 import { useEffect, useState } from "react";
 import api from "../lib/api";
@@ -93,6 +94,8 @@ export default function Home() {
   };
 
   return (
+  <div>
+    <Navbar />
     <div style={{ padding: "20px" }}>
       <h1>Expense Tracker</h1>
 
@@ -171,5 +174,6 @@ export default function Home() {
         ))}
       </ul>
     </div>
+  </div>  
   );
 }

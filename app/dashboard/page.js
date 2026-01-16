@@ -1,4 +1,5 @@
 "use client";
+import Navbar from "../components/Navbar";
 
 import { useEffect, useState } from "react";
 import api from "../../lib/api";
@@ -65,6 +66,8 @@ export default function Dashboard() {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884D8"];
 
   return (
+  <div>
+    <Navbar />
     <div style={{ padding: "20px" }}>
       <h1>Dashboard</h1>
 
@@ -109,5 +112,6 @@ export default function Dashboard() {
         <Tooltip />
       </PieChart>
     </div>
+  </div>  
   );
 }
