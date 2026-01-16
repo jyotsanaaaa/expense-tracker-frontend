@@ -10,15 +10,8 @@ Backend API: https://expense-tracker-backend-thhy.onrender.com/api/expenses/
 
 ## Project Overview
 
-This is the frontend of the Expense Tracker application built using Next.js (React).
-
-It allows users to:
-- Add expenses
-- View expenses
-- Edit expenses
-- Delete expenses
-- View a dashboard with charts
-- Convert currency
+This is the frontend of the Expense Tracker application built using Next.js (React).  
+It allows users to perform complete CRUD operations and view reports via a dashboard.
 
 ---
 
@@ -42,37 +35,99 @@ It allows users to:
 
 ## Features
 
-- User-friendly UI
 - Full CRUD from UI
 - Dashboard with charts
-- Currency conversion
+- Currency conversion (third-party API)
 - Connected to Django REST API
+- Fully deployed
 
 ---
 
-## How to Run Locally
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_API_BASE_URL=https://expense-tracker-backend-thhy.onrender.com
+```
+
+---
+
+## How to Run Frontend Locally
 
 ```bash
 cd frontend
 npm install
 npm run dev
+```
 
-Then open:
+Open:
 http://localhost:3000
 
-Demo Steps
-	1.	Open the live frontend
-	2.	Add a new expense
-	3.	Edit the expense
-	4.	Delete the expense
-	5.	Go to Dashboard
-	6.	View pie chart
-	7.	Convert currency
+---
 
-Backend Repo
+## How to Test (Step-by-Step)
+
+### CRUD Flow
+
+1. Open the frontend  
+2. Fill the expense form  
+3. Click Add Expense  
+4. Click Edit  
+5. Update the data  
+6. Click Delete  
+
+---
+
+### Dashboard
+
+Path:
+```
+/dashboard
+```
+
+URL:
+https://expense-tracker-frontend-jyotsanas-projects-9c35b39a.vercel.app/dashboard
+
+Features:
+- Pie chart
+- Category-wise breakdown
+- Total spent
+
+---
+
+### Third-Party API Feature
+
+Feature: Currency Conversion  
+Location: Dashboard page  
+
+Change the currency dropdown to:
+- USD
+- EUR
+- GBP
+
+The converted value updates using a third-party API.
+
+---
+
+## Deployment
+
+Frontend is deployed on **Vercel**.
+
+Steps:
+1. GitHub connected to Vercel
+2. Auto build on push
+3. Environment variables configured
+4. Backend API connected
+
+---
+
+## Backend Repo
 
 https://github.com/jyotsanaaaa/expense-tracker-backend
 
-Author
+---
+
+## Author
 
 Jyotsana Priyadarsini
