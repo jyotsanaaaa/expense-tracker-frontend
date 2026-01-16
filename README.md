@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Expense Tracker – Frontend
 
-## Getting Started
+## Live Links
 
-First, run the development server:
+Frontend: https://expense-tracker-frontend-jyotsanas-projects-9c35b39a.vercel.app  
+Dashboard: https://expense-tracker-frontend-jyotsanas-projects-9c35b39a.vercel.app/dashboard  
+Backend API: https://expense-tracker-backend-thhy.onrender.com/api/expenses/  
+
+---
+
+## Project Overview
+
+This is the frontend of the Expense Tracker application built using Next.js (React).
+
+It allows users to:
+- Add expenses
+- View expenses
+- Edit expenses
+- Delete expenses
+- View a dashboard with charts
+- Convert currency
+
+---
+
+## Tech Stack
+
+- Next.js (React)
+- Axios
+- Recharts
+- Vercel (Deployment)
+
+---
+
+## Pages
+
+| Page | Path |
+|------|------|
+| Home | / |
+| Dashboard | /dashboard |
+
+---
+
+## Features
+
+- User-friendly UI
+- Full CRUD from UI
+- Dashboard with charts
+- Currency conversion
+- Connected to Django REST API
+
+---
+
+## How to Run Locally
 
 ```bash
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Demo Steps
+	1.	Open the live frontend
+	2.	Add a new expense
+	3.	Edit the expense
+	4.	Delete the expense
+	5.	Go to Dashboard
+	6.	View pie chart
+	7.	Convert currency
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Backend Repo
 
-## Learn More
+https://github.com/jyotsanaaaa/expense-tracker-backend
 
-To learn more about Next.js, take a look at the following resources:
+Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Jyotsana Priyadarsini
